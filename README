@@ -1,0 +1,24 @@
+# maintaining westgate website
+
+## athena 
+
+### how to use pip
+
+1. initialize
+```
+add consult
+mkdir -p /mit/[lockername]/.local/
+fsr sa /mit/[lockername]/.local/ daemon.scripts write
+```
+2. ssh into scripts
+```
+ssh -k [lockername]@scripts
+```
+3. install
+```
+pip install --user --upgrade [packagename]
+```
+4. test
+```
+python -c "import django; print(django.get_version())"
+```
